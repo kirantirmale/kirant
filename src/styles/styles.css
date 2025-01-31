@@ -6,6 +6,7 @@
 /* ===========home css ================ */
 @import './home/hero.css';
 @import './home/scroll-up.css';
+@import './home/skils.css';
 
 /* ===============about css ================= */
 @import './about/about-main.css';

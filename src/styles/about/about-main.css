@@ -6,7 +6,7 @@
   --primary-font: "Open Sans", serif;
   --secondery-font: 'Ethnocentric Rg', sans-serif;
   --logo-font: "Pacifico", serif;
-  --primary-color: rgb(6 255 240 );
+  --primary-color: rgb(6 255 240);
   --secondery-color: rgb(46, 147, 149);
   --bg3-color: #635f5f92;
   --text-color: #b1b1b1;
@@ -27,10 +27,10 @@
 }
 
 .large-header {
-  /* background-image: url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg'); */
-  background: radial-gradient(circle at  center, rgba(15, 206, 194, 0.5), black 40%);
-
+  background: radial-gradient(circle at center, rgba(15, 206, 194, 0.5), black 40%);
 }
+
+
 
 .large-header {
   position: relative;
@@ -50,19 +50,57 @@
 }
 
 .main-title {
+  padding-top: 125px;
+  width: 90%; 
+  max-width: 620px;
+  margin: auto;
   font-size: 3rem;
   font-weight: bold;
-  color:var(--white);
+  color: var(--white);
   margin-bottom: 20px;
   font-family: var(--secondery-font);
+  text-align: center;
 }
 
-
 .para {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 20px;
   font-size: 1.2rem;
   color: #666;
   line-height: 1.5;
-  max-width: 800px;
-  margin: 0 auto 20px;
+  text-align: center;
 }
+
+@media (max-width: 1024px) {
+  .main-title {
+    padding-top: 125px;
+
+    font-size: 2.5rem;
+  }
+  .para {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2rem;
+    padding-top: 200px;
+  }
+  .para {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.8rem;
+    padding-top: 80px;
+  }
+  .para {
+    font-size: 0.95rem;
+  }
+}
+
 

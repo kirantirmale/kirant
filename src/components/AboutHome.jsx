@@ -157,6 +157,8 @@ const AboutHome = () => {
     return (
         <>
             <section>
+                <div className="main-about box">
+
                 <div ref={largeHeaderRef} className="large-header">
                     <canvas ref={canvasRef}></canvas>
                     <h1 className="main-title">Software Development Services</h1>
@@ -167,6 +169,7 @@ const AboutHome = () => {
                     </p>
 
                     <button className="btn">Get Started</button>
+                </div>
                 </div>
             </section>
 
