@@ -1,14 +1,13 @@
-<div align='center'><img style="width:30%" src='https://user-images.githubusercontent.com/105128267/218077760-5694a4ac-4e37-4de7-b31f-268ccd27400a.png'/></div>
 
 # About the project
 
-  <p>A <b>car rental</b> website is an online platform that allows users to rent cars for personal or business use. The website provides an easy-to-use interface for searching, comparing, and reserving cars from a wide selection of vehicles that vary in make, model, size, and price.</p>
+  <p>Kiran Portfolio</p>
 
 👉 Live Demo: <a href='https://car-rental-pcexwfwvp-devrahuls.vercel.app/'>Live Demo</a>
 
 <h3>Build with:</h3>
 
-» Sass / Scss <br>
+» CSS <br>
 » React JS
 
 
@@ -57,9 +56,9 @@ To run the React project locally, follow these steps:
 2.  Open your web browser and visit `http://localhost:3000`. The React application should be up and running.
     
 
-## Styling with Sass
+## Styling with CSS
 
-This project uses Sass as a preprocessor for CSS. Sass files are located in the `src/styles/styles.sccs` directory. To compile Sass into CSS, follow these steps:
+This project uses Sass as a preprocessor for CSS. Sass files are located in the `src/styles/styles` directory. To compile Sass into CSS, follow these steps:
 
 1.  Run the following command in your project directory:
     
@@ -68,7 +67,7 @@ This project uses Sass as a preprocessor for CSS. Sass files are located in the 
 ``` 
 
 
-This command will compile Sass files and generate corresponding CSS files in the `src/styles/styles.sccs` directory.
+This command will compile Sass files and generate corresponding CSS files in the `src/styles/styles` directory.
     
 2.  Link the generated CSS files in your React components to apply the styles.
     
