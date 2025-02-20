@@ -1,12 +1,16 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'univercel.css';
 @import 'scrollbar.css';
 @import 'navbar.css';
+@import 'footer.css';
 
 /* ===========home css ================ */
 @import './home/hero.css';
 @import './home/scroll-up.css';
 @import './home/skils.css';
+@import './home/leadership.css';
+@import './home/founder.css';
 
 /* ===============about css ================= */
 @import './about/about-main.css';

@@ -88,9 +88,14 @@
 }
 
 .navbar__links a:hover {
-  color: var(--white);
-  /* opacity: 1; */
+  color: var(--primary-color);
+  opacity: 1;
+}
 
+
+.navbar__links a.active {
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 /* Navbar Buttons */

@@ -1,125 +1,79 @@
-footer {
-    background-color: #ffffff;
-    padding: 10rem 0;
-  }
-  
-  .footer-content {
-    display: grid;
-    color: #010103;
-    grid-template-columns: 27fr 21fr 21fr 21fr;
-    gap: 8rem;
-    justify-content: center;
-    text-align: left;
-    color: #010103;
-  }
-  @media (max-width: 1100px) {
-    .footer-content {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  @media (max-width: 650px) {
-    .footer-content {
-      grid-template-columns: 1fr;
-    }
-  }
-  .footer-content__1 {
-    list-style: none;
-  }
-  @media (max-width: 650px) {
-    .footer-content__1 {
-      text-align: center;
-    }
-  }
-  .footer-content__1 li a {
-    text-decoration: none;
-    color: #010103;
-    transition: all 0.2s;
-  }
-  .footer-content__1 li a:hover {
-    color: #ff4d30;
-  }
-  .footer-content__1 li:nth-child(1) {
-    font-size: 2.4rem;
-    margin-bottom: 1.5rem;
-  }
-  .footer-content__1 li:nth-child(1) span {
-    font-weight: 700;
-  }
-  .footer-content__1 li:nth-child(2) {
-    font-size: 1.6rem;
-    color: #706f7b;
-    line-height: 1.7;
-    margin-bottom: 3rem;
-  }
-  .footer-content__1 li:nth-child(3), .footer-content__1 li:nth-child(4) {
-    font-size: 1.6rem;
-    font-family: "Rubik", sans-serif;
-    font-weight: 500;
-    margin-bottom: 1rem;
-  }
-  .footer-content__2 {
-    list-style: none;
-  }
-  @media (max-width: 650px) {
-    .footer-content__2 {
-      text-align: center;
-    }
-  }
-  .footer-content__2 a {
-    text-decoration: none;
-    color: #010103;
-    transition: all 0.2s;
-  }
-  .footer-content__2 a:hover {
-    color: #ff4d30;
-  }
-  .footer-content__2 li {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-  }
-  .footer-content__2 li:nth-child(1) {
-    font-size: 2.4rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    cursor: auto;
-  }
-  .footer-content__2 input {
-    font-family: "Rubik", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
-    background-color: #ececec;
-    border-width: 1px;
-    border-color: transparent;
-    padding: 10px 60px;
-    outline: none;
-    margin-top: 1rem;
-  }
-  @media (max-width: 1100px) {
-    .footer-content__2 input {
-      width: 100%;
-    }
-  }
-  
-  .submit-email {
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    background-color: #ff4d30;
-    padding: 1.5rem 2.5rem;
-    border-radius: 0.3rem;
-    box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.25);
-    transition: all 0.3s;
-    border: 2px solid #ff4d30;
-    font-size: 1.6rem;
-    width: -moz-fit-content;
-    width: fit-content;
-    cursor: pointer;
-    width: 100%;
-  }
-  .submit-email:hover {
-    box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.4);
-    background-color: #fa4226;
-  }
-  
+@import url('https://fonts.cdnfonts.com/css/ethnocentric');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --primary-font:"Open Sans", serif ;
+  --secondery-font:'Ethnocentric Rg', sans-serif ;
+  --logo-font: "Pacifico", serif ;
+  --primary-color:rgb(32, 226, 226) ;
+  --secondery-color:rgb(46, 147, 149);
+  --bg3-color:#b1b1b1;
+  --text-color: #b1b1b1;
+  --bg-dark: #000;
+  --white: #fff;
+  --shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.footer {
+  background: black url('/src/images/footer/Arc.png') center center / cover no-repeat;
+  color: #ccc;
+  padding: 80px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #14b8a6;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: #14b8a6;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: white;
+}
+
+.footer-heading {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-list li:hover {
+  color: #14b8a6;
+}

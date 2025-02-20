@@ -1,10 +1,11 @@
 import React from 'react'
+import UserContact from '../components/UserContact'
 
 const Contact = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <UserContact />
+    </>
   )
 }
 

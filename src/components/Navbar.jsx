@@ -6,7 +6,14 @@ function Navbar() {
   const [nav, setNav] = useState(false);
 
   const openNav = () => setNav(!nav);
-
+  
+  document.querySelectorAll('.navbar__links a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      document.querySelectorAll('.navbar__links a').forEach(el => el.classList.remove('active'));
+      e.target.classList.add('active');
+    });
+  });
+  
   return (
     <>
     <section className="main-sec">
@@ -20,7 +27,7 @@ function Navbar() {
           </div>
           <ul className="mobile-navbar__links">
             <li><Link onClick={openNav} to="/">Home</Link></li>
-            <li><Link onClick={openNav} to="/about">About</Link></li>
+            <li><Link onClick={openNav} to="/services">Our Services</Link></li>
             <li><Link onClick={openNav} to="/contact">Contact</Link></li>
             <li><Link onClick={openNav} to="/blog">Blog</Link></li>
           </ul>
@@ -35,7 +42,7 @@ function Navbar() {
           </div>
           <ul className="navbar__links">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
+            <li><Link to="/services">Our Services</Link></li>
             <li><Link to="/blog">Blog</Link></li>
           </ul>
           <div className="navbar__buttons">
