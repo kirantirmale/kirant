@@ -28,8 +28,8 @@ function Navbar() {
           <ul className="mobile-navbar__links">
             <li><Link onClick={openNav} to="/">Home</Link></li>
             <li><Link onClick={openNav} to="/services">Our Services</Link></li>
-            <li><Link onClick={openNav} to="/contact">Contact</Link></li>
             <li><Link onClick={openNav} to="/blog">Blog</Link></li>
+            <li><Link onClick={openNav} to="/contact">Contact</Link></li>
           </ul>
         </div>
 

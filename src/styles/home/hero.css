@@ -155,13 +155,14 @@
 .hero-content h1 {
   font-family: var(--secondery-font);
   font-size: 4rem;
-  background: linear-gradient(to left, black, silver);
+  color: var(--text-color);
+  /* background: linear-gradient(to left, black, silver);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .hero-content p {
-  color: var(--bg3-color);
+  color: var(--white);
   font-size: 1.45rem;
 }
 

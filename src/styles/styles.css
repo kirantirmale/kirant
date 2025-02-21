@@ -12,10 +12,14 @@
 @import './home/leadership.css';
 @import './home/founder.css';
 
-/* ===============about css ================= */
+/* ===============services css ================= */
 @import './services/service-main.css';
 @import './services/IdeationServices.css';
+@import './services/ServiceCard.css';
 
 /* ===============contact css ================= */
 @import './contact/contact-page.css';
 
+
+/* ===============blog css ================= */
+@import './blog/education.css';

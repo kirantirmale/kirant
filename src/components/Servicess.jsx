@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useCallback } from "react";
 import { gsap } from "gsap";
 import Arrow from '../images/icon/Arrow.png'
+import { useNavigate } from "react-router-dom";
 const Servicess = () => {
+    const navigate = useNavigate();
     const canvasRef = useRef(null);
     const largeHeaderRef = useRef(null);
     let width, height, ctx, points, target;
@@ -162,7 +164,7 @@ const Servicess = () => {
                         development services. Our custom-built AI solutions streamline workflows,
                         enhance efficiency, and drive significant growth.
                     </p>
-                    <button className="connect-button">
+                    <button className="connect-button" onClick={() => navigate('/contact')}>
                         <a href="/contactus">Connect with Our Experts</a>
                         <img alt="Right Arrow" src={Arrow} />
                     </button>

@@ -25,8 +25,12 @@
 .title {
     font-size: 40px;
     font-weight: bold;
+    font-family: var(--secondery-font);
     margin-bottom: 20px;
-    color: var(--white);
+    /* color: var(--white); */
+    background:  linear-gradient(90deg, #2d2d2d, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .description {
