@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import WhatsApp from '../images/contact/WhatsappBlue.png'
-import TelegramBlue from '../images/contact/TelegramBlue.png'
-import BookMeetingBlue from '../images/contact/BookMeetingBlue.png'
-import MailBlue from '../images/contact/MailBlue.png'
+import WhatsApp from '../images/contact/WhatsappBlue.png';
+import TelegramBlue from '../images/contact/TelegramBlue.png';
+import BookMeetingBlue from '../images/contact/BookMeetingBlue.png';
+import MailBlue from '../images/contact/MailBlue.png';
 
 const UserContact = () => {
   const [formData, setFormData] = useState({
@@ -13,13 +13,40 @@ const UserContact = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
+    setLoading(true);
+    setResponseMessage("");
+
+    try {
+      const response = await fetch("https://mern-app-api-xi.vercel.app/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setResponseMessage("Your message has been sent successfully!");
+        setFormData({ name: "", email: "", phone: "", budget: "", message: "" });
+      } else {
+        setResponseMessage(data.message || "Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      setResponseMessage("Failed to send message. Please check your connection.");
+    }
+
+    setLoading(false);
   };
 
   return (
@@ -28,8 +55,7 @@ const UserContact = () => {
         <form onSubmit={handleSubmit}>
           <h2 className="form-title">Get Estimate</h2>
           <p className="form-description">
-            Let’s create something extraordinary. Get an estimate with
-            Blockchain Technologies today!
+            Let’s create something extraordinary. Get an estimate with Blockchain Technologies today!
           </p>
 
           <div className="grid-container">
@@ -40,6 +66,7 @@ const UserContact = () => {
               type="text"
               value={formData.name}
               onChange={handleChange}
+              required
             />
             <input
               id="email"
@@ -48,6 +75,7 @@ const UserContact = () => {
               type="email"
               value={formData.email}
               onChange={handleChange}
+              required
             />
             <input
               id="phone"
@@ -56,12 +84,14 @@ const UserContact = () => {
               type="tel"
               value={formData.phone}
               onChange={handleChange}
+              required
             />
             <select
               id="budget"
               className="select-field"
               value={formData.budget}
               onChange={handleChange}
+              required
             >
               <option value="">Select Budget</option>
               <option value="$1000 - $5000">$1000 - $5000</option>
@@ -77,11 +107,16 @@ const UserContact = () => {
             rows="5"
             value={formData.message}
             onChange={handleChange}
+            required
           />
 
           <div className="submit-btn">
-            <button type="submit">Contact</button>
+            <button type="submit" disabled={loading}>
+              {loading ? "Sending..." : "Contact"}
+            </button>
           </div>
+
+          {responseMessage && <p className="response-message">{responseMessage}</p>}
         </form>
       </div>
 

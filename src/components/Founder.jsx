@@ -1,8 +1,10 @@
 import React from 'react';
 import kiran from '../images/hero/kiran.jpg';
 import Arrow from '../images/icon/Arrow.png';
+import { useNavigate } from 'react-router-dom';
 
 const Founder = () => {
+    const navigate = useNavigate();
     return (
         <>
             <section className="founder-section">
@@ -24,9 +26,9 @@ const Founder = () => {
                         <br /><br />
                         Dedicated to continuous learning and innovation, Kiran strives to push the boundaries of web development by leveraging the latest technologies in the MERN ecosystem.
                     </p>
-                    <button className="connect-button">
+                    <button className="connect-button" onClick={() => navigate('/contact')}>
                         Connect
-                        <img src={Arrow} alt="Arrow" className="button-arrow" />
+                        <img src={Arrow}  alt="Arrow" className="button-arrow" />
                     </button>
                 </div>
             </section>

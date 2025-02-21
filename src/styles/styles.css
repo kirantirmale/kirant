@@ -13,7 +13,8 @@
 @import './home/founder.css';
 
 /* ===============about css ================= */
-@import './about/about-main.css';
+@import './services/service-main.css';
+@import './services/IdeationServices.css';
 
 /* ===============contact css ================= */
 @import './contact/contact-page.css';

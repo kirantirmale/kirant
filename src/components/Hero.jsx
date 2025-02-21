@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section>
       <div className="my-background">
@@ -15,7 +17,7 @@ const Hero = () => {
                 <p>
                 Hello, I'm Kiran Tirmale, a software engineer with expertise in designing, developing, and optimizing digital solutions to drive innovation and efficiency.
                 </p>
-                <button className="btn">Let's Get Connect</button>
+                <button className="btn" onClick={() => navigate('/contact')}>Let's Get Connect</button>
               </div>
             </div>
 

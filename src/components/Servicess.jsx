@@ -1,9 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 import { gsap } from "gsap";
-
+import Arrow from '../images/icon/Arrow.png'
 const Servicess = () => {
-
-
     const canvasRef = useRef(null);
     const largeHeaderRef = useRef(null);
     let width, height, ctx, points, target;
@@ -26,8 +24,7 @@ const Servicess = () => {
         height = window.innerHeight;
         target = { x: width / 2, y: height / 2 };
 
-        const largeHeader = largeHeaderRef.current;
-        largeHeader.style.height = `${height}px`;
+        largeHeaderRef.current.style.height = `${height}px`;
 
         const canvas = canvasRef.current;
         canvas.width = width;
@@ -131,22 +128,22 @@ const Servicess = () => {
         return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
     };
 
-    const mouseMove = (e) => {
+    const mouseMove = useCallback((e) => {
         target.x = e.clientX || e.pageX;
         target.y = e.clientY || e.pageY;
-    };
+    }, []);
 
-    const scrollCheck = () => {
+    const scrollCheck = useCallback(() => {
         animateHeader = document.body.scrollTop <= height;
-    };
+    }, []);
 
-    const resize = () => {
+    const resize = useCallback(() => {
         width = window.innerWidth;
         height = window.innerHeight;
         largeHeaderRef.current.style.height = `${height}px`;
         canvasRef.current.width = width;
         canvasRef.current.height = height;
-    };
+    }, []);
 
     const addListeners = () => {
         window.addEventListener("mousemove", mouseMove);
@@ -155,26 +152,24 @@ const Servicess = () => {
     };
 
     return (
-        <>
-            <section>
-                <div className="main-about box">
-
+        <section>
+            <div className="main-about box">
                 <div ref={largeHeaderRef} className="large-header">
                     <canvas ref={canvasRef}></canvas>
-                    <h1 className="main-title">Software Development Services</h1>
+                    <h1 className="main-title">Product Development and Ideation Services</h1>
                     <p className="para">
                         Unlock the potential of your business with Intelisync's advanced AI
                         development services. Our custom-built AI solutions streamline workflows,
-                        enhance efficiency, and drive significant growth.   
+                        enhance efficiency, and drive significant growth.
                     </p>
-
-                    <button className="btn">Get Started</button>
+                    <button className="connect-button">
+                        <a href="/contactus">Connect with Our Experts</a>
+                        <img alt="Right Arrow" src={Arrow} />
+                    </button>
                 </div>
-                </div>
-            </section>
+            </div>
+        </section>
+    );
+};
 
-        </>
-    )
-}
-
-export default Servicess
+export default Servicess;
