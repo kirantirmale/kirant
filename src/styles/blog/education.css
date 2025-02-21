@@ -9,6 +9,7 @@
 .containerr{
     padding:  80px 0px;
     margin-bottom: 40px;
+    margin: 15px;
 }
 .containerr h1{
     text-align: center;
@@ -197,6 +198,7 @@
     text-decoration: none;
     display: inline-block;
     margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .btn:hover {
