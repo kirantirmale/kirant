@@ -26,7 +26,7 @@ const UserContact = () => {
     setResponseMessage("");
 
     try {
-      const response = await fetch("https://mern-app-api-xi.vercel.app/contact", {
+      const response = await fetch("https://kirant-be-kirantirmales-projects.vercel.app/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -94,6 +94,7 @@ const UserContact = () => {
               required
             >
               <option value="">Select Budget</option>
+              <option value="$100 - $1000">$100 - $1000</option>
               <option value="$1000 - $5000">$1000 - $5000</option>
               <option value="$5000 - $10,000">$5000 - $10,000</option>
               <option value="$10,000+">$10,000+</option>

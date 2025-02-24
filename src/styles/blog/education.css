@@ -70,8 +70,8 @@
     color: #14b8a6;
     font-weight: bold;
     animation: glow 1.5s ease-in-out infinite alternate;
-    box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 17px 2px inset, 
-                rgba(255, 255, 0, 0.8) 0px 0px 17px 2px;
+    box-shadow: rgb(6 255 240 ) 0px 0px 17px 2px inset, 
+                rgb(6 255 240 ) 0px 0px 17px 2px;
 }
 
 /* Main content */

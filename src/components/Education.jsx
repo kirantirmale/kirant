@@ -26,25 +26,25 @@ const projects = {
             "Frontend developers are the creative minds behind the user interfaces of websites and applications, shaping the way users interact with digital products.",
         tags: ["#Frontend Developer", "#UserExperience", "#March 2021 - June 2022"]
     },
-    "RKDF University": {
+    "MCA - RKDF University": {
         img: RKDFUniversity,
         description:
             "A Master of Computer Applications (MCA) degree equips individuals with advanced knowledge and skills in the field of computer science and software development.",
         tags: ["#MCA", "#Master of Computer Applications (MCA)", "#June 2023 - Present"]
     },
-    "NMU University": {
+    "BCA - NMU University": {
         img: NMUUniversity,
         description:
             "A Bachelor of Computer Applications (BCA) degree provides students with a strong foundation in computer science, software development, and information technology.",
         tags: ["#BCA", "#(BCA)", "#July 2019 - June 2022"]
     },
-    "RDMP High School": {
+    "12th - RDMP High School": {
         img: RDMPHighSchool,
         description:
             "High school education forms the foundation for students' academic and personal growth, providing a diverse range of subjects and opportunities for learning.",
         tags: ["#12th", "#High School", "#July 2017 - June 2019"]
     },
-    "NMV Dhamane": {
+    "10th - NMV Dhamane": {
         img: NMVHighSchool,
         description:
             "High school education forms the foundation for students' academic and personal growth, providing a diverse range of subjects and opportunities for learning.",
@@ -86,7 +86,7 @@ const Education = () => {
                                         <span key={index}>{tag}</span>
                                     ))}
                                 </div>
-                                <a href="/ContactUs" className="btn">Book demo</a>
+                                <a href="/contact" className="btn">Book demo</a>
                             </div>
                             <img src={projects[selectedProject].img} alt={selectedProject} className="project-image" />
                         </div>

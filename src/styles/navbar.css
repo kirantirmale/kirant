@@ -93,10 +93,12 @@
 }
 
 
-.navbar__links a.active {
+.navbar__links a.active,
+.mobile-navbar__links a.active {
   color: var(--primary-color);
   font-weight: bold;
 }
+
 
 /* Navbar Buttons */
 .navbar__buttons {
