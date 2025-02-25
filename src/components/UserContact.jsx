@@ -26,7 +26,7 @@ const UserContact = () => {
     setResponseMessage("");
 
     try {
-      const response = await fetch("https://kirant-be-kirantirmales-projects.vercel.app/contact", {
+      const response = await fetch("https://mern-app-api-xi.vercel.app/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

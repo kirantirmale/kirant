@@ -29,7 +29,7 @@ const Leadership = () => {
         </div>
 
         {/* Urmila - React Developer */}
-        <div className="leader-card">
+        {/* <div className="leader-card">
           <div className="leader-info">
             <h2 className="leader-role">Developer</h2>
             <h3 className="leader-name">Urmila Chavan</h3>
@@ -42,7 +42,7 @@ const Leadership = () => {
           <div className="leader-image">
             <img src={UrmilaImg} alt="Urmila Chavan" />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
