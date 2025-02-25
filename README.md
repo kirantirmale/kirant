@@ -1,85 +1,70 @@
+# Getting Started with Create React App
 
-# About the project
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-  <p>Kiran Portfolio</p>
+## Available Scripts
 
-👉 Live Demo: <a href='https://car-rental-pcexwfwvp-devrahuls.vercel.app/'>Live Demo</a>
+In the project directory, you can run:
 
-<h3>Build with:</h3>
+### `npm start`
 
-» CSS <br>
-» React JS
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
-# React Project Setup
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-This guide provides instructions to set up and run a React project on your local machine. The project also includes Sass as a dependency for styling.
+### `npm run build`
 
-## Prerequisites
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Before you begin, ensure that you have the following installed on your machine:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
--   Node.js (v12 or later)
--   npm (Node Package Manager, comes with Node.js)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Installation
+### `npm run eject`
 
-1.  Clone the project repository to your local machine using Git:
-    ```
-     git clone <repository_url>` 
-    ```
-2.  Navigate to the project directory:
-    
-    ```
-     cd <project_directory>
-    ``` 
-    
-3.  Install project dependencies by running the following command:
-    
-    ``` 
-     npm install
-    ```  
-    
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## Usage
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-To run the React project locally, follow these steps:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-1.  Start the development server:
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-    ``` 
-     npm start 
-    ``` 
-    This command will compile the project and start a local development server.
-    
-2.  Open your web browser and visit `http://localhost:3000`. The React application should be up and running.
-    
+## Learn More
 
-## Styling with CSS
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-This project uses Sass as a preprocessor for CSS. Sass files are located in the `src/styles/styles` directory. To compile Sass into CSS, follow these steps:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-1.  Run the following command in your project directory:
-    
-```
- npm run build-css
-``` 
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-This command will compile Sass files and generate corresponding CSS files in the `src/styles/styles` directory.
-    
-2.  Link the generated CSS files in your React components to apply the styles.
-    
+### Analyzing the Bundle Size
 
-## Additional Scripts
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-The project includes additional scripts that you can run using the `npm run` command:
+### Making a Progressive Web App
 
--   `test`: Run tests for the project.
--   `build`: Build the project for production.
--   `eject`: Eject the project configuration from create-react-app.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## Conclusion
+### Advanced Configuration
 
-You should now have the React project set up on your local machine. Feel free to explore and modify the code to meet your requirements. If you encounter any issues, please refer to the project's documentation or seek support from the project's maintainers.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
