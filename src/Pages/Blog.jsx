@@ -1,11 +1,13 @@
 import React from 'react'
 import Education from '../components/Education'
+import BlogHome from '../components/BlogHome'
 
 const Blog = () => {
   return (
-   <>
-   <Education/>
-   </>
+    <>
+      <BlogHome/>
+      <Education />
+    </>
   )
 }
 

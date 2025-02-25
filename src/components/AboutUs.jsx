@@ -5,7 +5,7 @@ const AboutUs = () => {
     <section className=''>
       <section className='container'>
 
-gsuyiuhdivcnkin
+        gsuyiuhdivcnkin
       </section>
     </section>
   )
