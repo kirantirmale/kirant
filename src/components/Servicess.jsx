@@ -165,7 +165,7 @@ const Servicess = () => {
                         enhance efficiency, and drive significant growth.
                     </p>
                     <button className="connect-button" onClick={() => navigate('/contact')}>
-                        <a href="/contactus">Connect with Our Experts</a>
+                        <a href="/contact">Connect with Our Experts</a>
                         <img alt="Right Arrow" src={Arrow} />
                     </button>
                 </div>
