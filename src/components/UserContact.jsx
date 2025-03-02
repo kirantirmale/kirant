@@ -141,7 +141,7 @@ const UserContact = () => {
         </a>
 
         {/* Book a Meeting */}
-        <a href="https://calendly.com/blockchain-technologies" target="_blank" rel="noopener noreferrer" className="contact-item">
+        <a href="https://www.linkedin.com/in/kiran-tirmale-668313252/" target="_blank" rel="noopener noreferrer" className="contact-item">
           <img alt="BookMeeting" src={BookMeetingBlue} />
           <div className="contact-text">
             <h3>Book Meeting Now</h3>
