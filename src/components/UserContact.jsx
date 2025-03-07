@@ -3,6 +3,7 @@ import WhatsApp from '../images/contact/WhatsappBlue.png';
 import TelegramBlue from '../images/contact/TelegramBlue.png';
 import BookMeetingBlue from '../images/contact/BookMeetingBlue.png';
 import MailBlue from '../images/contact/MailBlue.png';
+import pdf from '../pdf/KiranTirmale-Resume.pdf'
 
 const UserContact = () => {
   const [formData, setFormData] = useState({
@@ -141,13 +142,14 @@ const UserContact = () => {
         </a>
 
         {/* Book a Meeting */}
-        <a href="https://www.linkedin.com/in/kiran-tirmale-668313252/" target="_blank" rel="noopener noreferrer" className="contact-item">
+        <a href={pdf} download="Kiran_Tirmale_CV.pdf" className="contact-item" target="_blank" rel="noopener noreferrer">
           <img alt="BookMeeting" src={BookMeetingBlue} />
           <div className="contact-text">
-            <h3>Book Meeting Now</h3>
-            <p>Blockchain-technologies</p>
+            <h3>Download CV Now</h3>
+            <p>Mern Stack Developer</p>
           </div>
         </a>
+
 
         {/* Email */}
         <a href="mailto:kirantirmale2362001@gmail.com" className="contact-item">
