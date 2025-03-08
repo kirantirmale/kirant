@@ -235,8 +235,8 @@ const BlogHeading = () => {
     }, []);
 
     return (
-        <div>
-            <canvas ref={canvasRef}></canvas>
+       <div style={{ position: "relative", overflow: "hidden", width: "100%", height: "100vh" }}>
+            <canvas ref={canvasRef} ></canvas>
 
             <div className="container">
 
